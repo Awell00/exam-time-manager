@@ -3,7 +3,7 @@ import { z } from 'zod'
 import moment from 'moment'
 
 // URI for the clock-stma-production API
-const uri = "https://clock-stma.onrender.com/"
+const uri = "http://localhost:4000/"
 
 // Interface for elements on the HTML page
 interface Elements {

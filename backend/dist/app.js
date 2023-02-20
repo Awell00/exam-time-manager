@@ -26,7 +26,7 @@ const app = (0, express_1.default)();
 // Create http server
 const httpServer = http_1.default.createServer(app);
 // URI's that are allowed to make requests
-const uri = ["http://localhost:5173", "https://clock-stma.vercel.app", "https://5173-awell00-clockstma-289gwolc6pt.ws-eu85.gitpod.io"];
+const uri = "http://localhost:5173";
 // Options for cors middleware
 const corsOptions = {
     origin: uri,
