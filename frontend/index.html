@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Declare character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Set the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <!-- Set the title of the document -->
+    <title>Clock StMa - DS</title>
+  </head>
+  <body>
+    <!-- Clock display -->
+    <div id="clock" class="clock">--:--:--</div>
+    <!-- Dropdown for selecting a room -->
+    <select name="test" id="selectSalle" class="select">
+      <option value="DS">DS</option>
+      <option value="PERM">PERM</option>
+    </select>
+    
+    <!-- Container for the subjects -->
+    <div id="all_subject" class="allSubject">
+      
+    </div>
+    
+    <!-- Button for opening the modal -->
+    <div class="add" id="buttonModal">
+      <!-- SVG icon for the button -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </div>
+    
+    <!-- Modal for adding a subject -->
+    <div id="modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <!-- Form for adding a subject -->
+        <div class="form">
+          <!-- Label for the subject input -->
+          <label for="subject" class="formTitle">Subject:</label><br>
+          <!-- Input for the subject name -->
+          <input type="text" id="subject" name="subject" placeholder="Subject" class="inputSub"><br>
+          <!-- Label for the duration input -->
+          <label for="time" class="formTitle">Duration:</label><br>
+          <div>
+            <!-- Inputs for the hours and minutes of the duration -->
+            <input type="text" id="hours" name="hours" placeholder="Hours" class="input">
+            <input type="text" id="minutes" name="hours" placeholder="Minutes" class="input"><br><br>
+          </div>
+          
+        </div>
+        <!-- Cancel button -->
+        <input type="button" id="cancel" value="Cancel" class="cancel"></input>
+        <!-- Add button -->
+        <input type="button" id="add" value="Add" class="button"></input>
+      </div>
+    </div>
+    
+    <!-- Import the TypeScript module for the page -->
+    <script type="module" src="/src/template/ds.ts"></script>
+  </body>
+</html>

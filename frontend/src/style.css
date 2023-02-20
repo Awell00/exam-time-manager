@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
+:root {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+
+  color:  #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} 
+
+.clock {
+  text-align: center;
+  font-size: 10rem;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.select {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  padding-top: .2rem;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-text-fill-color: #242424;
+  appearance: none;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: #EFEFEF;
+  border: solid #242424;
+  border-radius: .7rem;
+  cursor: pointer;
+}
+
+.allSubject {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.subjectObject {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border: .5rem solid #242424;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.subject {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.early, .extra, .end {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  font-family: 'Josefin sans';
+  font-size: 1.2rem;
+  background-color: #EFEFEF;
+  border: solid #242424;
+  border-radius: 0.5rem;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-text-fill-color: #242424; 
+}
+
+.add {
+  color: #242424;
+  margin: 2rem auto;
+  width: 6.4rem;
+  cursor: pointer;
+}
+
+.divButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.6); 
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto; 
+  padding: 20px;
+  border: .3rem solid #242424;
+  width: 16rem;
+  border-radius: 1rem; 
+}
+
+.cancel {
+  display: none;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  font-size: 2rem;
+}
+
+.input {
+  margin-bottom: 1rem;
+}
+
+.input, .inputSub {
+  width: 15rem;
+  height: 1.5rem;
+  padding-left: .5rem;
+  border: .15rem solid #242424;
+  border-radius: .2rem;
+}
+
+@media (min-width: 200px) and (max-width: 359px) {
+  .clock {
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+    font-size: 4.5rem;
+  }
+
+  .allSubject {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .subject {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .early, .extra, .end {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+  }
+
+  .button {
+    font-size: .9rem;
+    border-radius: 0.5rem;
+    width: 4rem;
+    height: 2.5rem;
+  }
+
+  .subjectObject {
+    padding: 1.5rem;
+    border: .4rem solid #242424;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .add {
+    margin: .5rem auto;
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .add svg {
+    width: 4rem;
+  }
+
+  .input, .inputSub {
+    width: 10rem;
+  }
+
+  .modal-content {
+    width: 11rem;
+  }
+
+  .formTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 549px) {
+  .clock {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 6rem;
+  }
+
+  .allSubject {
+    margin-top: 2.5rem;
+    flex-direction: column;
+  }
+
+  .subject {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .early, .extra, .end {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+  }
+
+  .button {
+    font-size: .9rem;
+    border-radius: 0.5rem;
+    width: 4rem;
+    height: 2.5rem;
+  }
+
+  .subjectObject {
+    padding: 1.5rem;
+    border: .4rem solid #242424;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .add {
+    margin: .5rem auto;
+    width: 4.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .add svg {
+    width: 4.5rem;
+  }
+
+  .input, .inputSub {
+    width: 16rem;
+  }
+
+  .modal-content {
+    width: 17rem;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 769px) {
+  .clock {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 8rem;
+  }
+
+  .allSubject {
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  .subject {
+    font-size: 4rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .early, .extra, .end {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .subjectObject {
+    padding: 1.5rem;
+    border: .4rem solid #242424;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+  }
+
+  .add {
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    width: 6.4rem;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1023px) {
+  .clock {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 9rem;
+  }
+
+  .allSubject {
+    margin-top: 3.5rem;
+    flex-direction: column;
+  }
+
+  .subject {
+    font-size: 4.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .early, .extra, .end {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subjectObject {
+    padding: 1.5rem;
+    border: .4rem solid #242424;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+  }
+
+  .add {
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    width: 6rem;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+
+  .subject {
+    font-size: 2.5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .early, .extra, .end {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media (min-width: 1301px) and (max-width: 1520px) {
+
+  .subject {
+    font-size: 3rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .early, .extra, .end {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+}
+
+@media (min-width: 1521px) {
+
+  .subject {
+    font-size: 3.5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .early, .extra, .end {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  
+}
+
+@media (min-width: 1024px) {
+  .clock {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 9rem;
+  }
+
+  .allSubject {
+    margin-top: 2.5rem;
+  }
+
+  .subjectObject {
+    padding: 1.5rem;
+    border: .4rem solid #242424;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+  }
+
+  .add {
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    width: 6.4rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .button {
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 3rem;
+  }
+
+  .modal-content {
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 1520px) {
+  .modal-content {
+    margin-top: 10%;
+  }
+}
